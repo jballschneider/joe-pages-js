@@ -36,7 +36,7 @@
     "buildCmd": "npm run build && touch sites-config/redirects.csv && echo \"/home.html,/index.html\" >> sites-config/redirects.csv"
   },
   "livePreview": {
-    "serveSetupCmd": "printenv YEXT_AUTH_CREDENTIALS && echo "foo" && yext info",
+    "serveSetupCmd": "printenv YEXT_AUTH_CREDENTIALS && echo \"foo\" && yext info",
     "serveCmd": "yext resources pull ~ && ls -al ~ && echo \"SERVING!\""
   }
 }
