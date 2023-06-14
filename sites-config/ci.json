@@ -37,6 +37,6 @@
   },
   "livePreview": {
     "serveSetupCmd": "yext info",
-    "serveCmd": "echo \"SERVING!\""
+    "serveCmd": "yext resources pull ~ && ls -al ~ && echo \"SERVING!\""
   }
 }
