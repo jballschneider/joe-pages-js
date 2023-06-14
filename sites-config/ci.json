@@ -36,6 +36,7 @@
     "buildCmd": "npm run build && touch sites-config/redirects.csv && echo \"/home.html,/index.html\" >> sites-config/redirects.csv"
   },
   "livePreview": {
-    "serveSetupCmd": ":"
+    "serveSetupCmd": "yext info",
+    "serveCmd": "echo \"SERVING!\""
   }
 }
