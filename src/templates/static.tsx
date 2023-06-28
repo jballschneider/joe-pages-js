@@ -82,7 +82,7 @@ const Static: Template<ExternalImageRenderData> = ({
       <PageLayout _site={_site}>
         <div className="centered-container">
           <div className="bg-red-900 text-5xl font-bold text-white p-10 flex items-center justify-center flex-col gap-x-14 gap-y-10 md:flex-row">
-            <h1>Welcome to Turtlehead Tacos</h1>
+            <h1>Welcome to Turtlehead Tacos Featuring PGS Tools</h1>
           </div>
           <div className="space-y-5">
             <p>
