@@ -8,46 +8,5 @@
       ]
     }
   ],
-  "features": [
-    {
-      "name": "sports",
-      "streamId": "sports-stream-v6",
-      "templateType": "JS",
-      "entityPageSet": {
-        "plugin": {}
-      }
-    },
-    {
-      "name": "turtlehead-tacos",
-      "templateType": "JS",
-      "staticPage": {
-        "plugin": {}
-      }
-    }
-  ],
-  "streams": [
-    {
-      "$id": "sports-stream-v6",
-      "fields": [
-        "id",
-        "uid",
-        "meta",
-        "name",
-        "description",
-        "slug"
-      ],
-      "filter": {
-        "entityTypes": [
-          "ce_sports"
-        ]
-      },
-      "localization": {
-        "locales": [
-          "en",
-          "es"
-        ],
-        "primary": false
-      }
-    }
-  ]
+  "features": []
 }
