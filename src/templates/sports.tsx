@@ -28,6 +28,8 @@ import {
 } from "@yext/pages";
 import PageLayout from "../components/page-layout";
 
+const templateLocales = ["en", "es"];
+
 /**
  * Required when Knowledge Graph data is used for a template.
  */
@@ -42,6 +44,7 @@ export const config: TemplateConfig = {
       "meta",
       "name",
       "description",
+      "slug",
     ],
     // Defines the scope of entities that qualify for this stream.
     filter: {
@@ -49,7 +52,7 @@ export const config: TemplateConfig = {
     },
     // The entity language profiles that documents will be generated for.
     localization: {
-      locales: ["en"],
+      locales: templateLocales,
       primary: false,
     },
   },
@@ -62,7 +65,8 @@ export const config: TemplateConfig = {
  * take on the form: featureName/entityId
  */
 export const getPath: GetPath<TemplateProps> = ({ document }) => {
-  return `sport/${document.id.toString()}/v2`;
+  console.log(document);
+  return `${document.slug}`;
 };
 
 /**
@@ -72,7 +76,32 @@ export const getPath: GetPath<TemplateProps> = ({ document }) => {
  * a new deploy.
  */
 export const getRedirects: GetRedirects<TemplateProps> = ({ document }) => {
-  return [`sport-old/${document.id.toString()}`];
+  return [`sport-old/${getPath({document: document})}`];
+};
+
+const getAlternateLocaleDropdown = ({ document }) => {
+  return (
+    <ul>
+      {templateLocales.map((locale) => <li>View page for <button onClick={() => navigateToAltLocale(locale, document)}>{locale}</button></li>)}
+    </ul>
+  );
+};
+
+const navigateToAltLocale = async ( locale, document ) => {
+  const getUrl = `https://cdn.yextapis.com/v2/accounts/me/entityprofiles/${document.id}/${locale}?api_key=b2babab4666cd029164b60bcba526b71&fields=slug&v=20220808`;
+  const response = await fetch(getUrl, {
+     method: 'GET',
+     mode: 'cors',
+     cache: 'no-cache',
+     // credentials: 'same-origin',
+     headers: {
+         'Content-Type': 'application/json'
+     },
+     // redirect: 'follow',
+  });
+  const body = await response.json();
+
+  window.location = `${window.location.origin}/${body.response.slug}`;
 };
 
 /**
@@ -124,6 +153,7 @@ const Location: Template<TemplateRenderProps> = ({
   return (
     <>
       <PageLayout _site={_site}>
+        {getAlternateLocaleDropdown({document})}
         <Banner name={name} >
           <div className="bg-white h-40 w-1/5 flex items-center justify-center text-center flex-col space-y-4 rounded-lg">
             <div className="text-black text-base">Visit Us Today!</div>
