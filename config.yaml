@@ -1,11 +1,9 @@
 streamConfig:
   responseHeaders:
-    -
-      pathPattern: *
+    - pathPattern: .*
       headerKey: joe-custom-header
       headerValues:
-        -
-          joe-custom-value
+        - joe-custom-value
 
 ciConfig:
   buildArtifacts:
