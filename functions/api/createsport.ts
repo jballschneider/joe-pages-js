@@ -1,5 +1,5 @@
 // Parses arguments from the url query params and creates an entity via Knowledge API
-export async function main(argumentJson) {
+export default async function main(argumentJson) {
    let url = argumentJson["requestUrl"];
    let questionMark = url.indexOf("?");
    url = url.substring(questionMark);

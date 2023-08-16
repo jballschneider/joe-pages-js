@@ -1,5 +1,14 @@
 {
   "artifactStructure": {
+    "assets": [
+      {
+        "root": "dist",
+        "pattern": "assets/**/*"
+      },
+      {
+        "root": "assets"
+      }
+    ],
     "plugins": [
       {
         "pluginName": "PagesGenerator",

@@ -1,9 +1,11 @@
 node_modules/
 sites-rendered-output/
 localData/
-dist/
+dist/assets
+dist/plugin
 .yext
 .artifact-output
 *.local
+sites-config
 
 .DS_Store

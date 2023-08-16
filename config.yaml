@@ -1,0 +1,12 @@
+streamConfig:
+  responseHeaders:
+    -
+      pathPattern: .*/v2
+      headerKey: joe-custom-header
+      headerValues:
+        -
+          joe-custom-value
+
+ciConfig:
+  buildArtifacts:
+    buildCmd: npm install && npm run build
