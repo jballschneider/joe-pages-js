@@ -1,0 +1,35 @@
+{
+  "features": [
+    {
+      "name": "feature1",
+      "streamId": "stream1",
+      "templateType": "JS",
+      "entityPageSet": {}
+    }
+  ],
+  "streams": [
+    {
+      "$id": "stream1",
+      "fields": [
+        "id",
+        "uid",
+        "meta",
+        "name",
+        "description",
+        "slug"
+      ],
+      "filter": {
+        "entityTypes": [
+          "ce_sports"
+        ]
+      },
+      "localization": {
+        "locales": [
+          "en",
+          "es"
+        ],
+        "primary": false
+      }
+    }
+  ]
+}
