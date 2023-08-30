@@ -36,7 +36,7 @@
     "buildCmd": "npm run build"
   },
   "livePreview": {
-    "serveSetupCmd": "printenv YEXT_AUTH_CREDENTIALS",
-    "serveCmd": "yext info && yext resources pull ~ && ls -al ~ && echo \"SERVING!\""
+    "serveSetupCmd": "nvm list",
+    "serveCmd": "npx serve ."
   }
 }
