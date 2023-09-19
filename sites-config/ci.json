@@ -37,6 +37,6 @@
   },
   "livePreview": {
     "serveSetupCmd": "nvm list",
-    "serveCmd": "npx serve ."
+    "serveCmd": "npx serve . -p 8080"
   }
 }
