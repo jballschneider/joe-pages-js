@@ -1,7 +1,8 @@
 node_modules/
 sites-rendered-output/
 localData/
-dist/
+dist/public
+dist/assets
 .yext
 .artifact-output
 *.local

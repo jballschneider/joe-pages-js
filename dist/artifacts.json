@@ -9,7 +9,6 @@
         "root": "assets"
       }
     ],
-    "features": "sites-config/features.json",
     "plugins": [
       {
         "pluginName": "Generator",
@@ -27,16 +26,5 @@
         "functionName": "Generate"
       }
     ]
-  },
-  "dependencies": {
-    "installDepsCmd": "npm install",
-    "requiredFiles": ["package.json", "package-lock.json", ".npmrc"]
-  },
-  "buildArtifacts": {
-    "buildCmd": "npm run build"
-  },
-  "livePreview": {
-    "serveSetupCmd": "nvm list",
-    "serveCmd": "npx serve . -p 8080"
   }
 }
