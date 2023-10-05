@@ -1,5 +1,5 @@
 buildConfiguration:
-  buildCommand: npm run build && npx pages generate templates && npx pages generate artifacts
+  buildCommand: npm run build && npx pages generate templates && npx pages generate artifacts && ls -al dist && cat dist/artifacts.json
   
   # installDependenciesStep is an optional step you can use to improve the efficiency of your build.
   # The command will be cached in most builds when there have not been any changes to the specified
