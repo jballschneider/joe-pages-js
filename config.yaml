@@ -17,7 +17,7 @@ livePreviewConfiguration:
 
 locales:
   - en
-  - fr
+  - es
 
 # The site stream allows for specification of site entity whose data will be injected to all
 # generation contexts under the `_site` property.
