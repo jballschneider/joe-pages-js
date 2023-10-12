@@ -1,11 +1,6 @@
  {
   "features": [
     {
-      "name": "turtlehead-tacos",
-      "templateType": "JS",
-      "staticPage": {}
-    },
-    {
       "name": "sports",
       "streamId": "sports-stream-v6",
       "templateType": "JS",
