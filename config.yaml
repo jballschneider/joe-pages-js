@@ -15,18 +15,20 @@ livePreviewConfiguration:
   # setupCommand: example command
   serveCommand: npx serve -p 8080
 
-locales:
-  - en
-  - es
+# locales:
+#   - en
+#   - es
 
 # The site stream allows for specification of site entity whose data will be injected to all
 # generation contexts under the `_site` property.
-# siteStream:
-#   id: example-site-stream
-#   entityId: 1
-#   fields:
-#     - field1
-#     - field2
+siteStream:
+  id: joe-test-site-stream
+  entityId: 4225754080071169737
+  localization:
+    locales:
+      - en
+  fields:
+    - name
 
 responseHeaders:
   -
