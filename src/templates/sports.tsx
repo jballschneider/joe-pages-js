@@ -154,7 +154,7 @@ const Location: Template<TemplateRenderProps> = ({
     <>
       <PageLayout _site={_site}>
         {getAlternateLocaleDropdown({document})}
-        <Banner name={name} >
+        <Banner name={name.d} >
           <div className="bg-white h-40 w-1/5 flex items-center justify-center text-center flex-col space-y-4 rounded-lg">
             <div className="text-black text-base">Visit Us Today!</div>
             <Cta
