@@ -168,7 +168,7 @@ const Location: Template<TemplateRenderProps> = ({
           <div className="section">
             <div className="grid grid-cols-3 gap-x-10 gap-y-10">
               <div className="col-span-2 pt-5 space-y-10">
-                {description.d}
+                {description.d.d}
               </div>
             </div>
           </div>
