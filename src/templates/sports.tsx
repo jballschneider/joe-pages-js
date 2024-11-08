@@ -48,7 +48,7 @@ export const config: TemplateConfig = {
     ],
     // Defines the scope of entities that qualify for this stream.
     filter: {
-      savedFilters: ["1400446610"],
+      savedFilterIds: ["1400446610"],
     },
     // The entity language profiles that documents will be generated for.
     localization: {
