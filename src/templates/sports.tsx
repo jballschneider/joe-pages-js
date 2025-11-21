@@ -174,6 +174,7 @@ const Location: Template<TemplateRenderProps> = ({
           </div>
         </div>
         <span>We love Sportmarken!</span>
+        <span>Go Sports!</span>
       </PageLayout>
     </>
   );
