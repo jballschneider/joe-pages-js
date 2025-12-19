@@ -128,7 +128,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
         },
       },
     ],
-    other: `<script>${JSON.stringify(data.document.__certified_facts)}</script>`,
+    other: `<script>${JSON.stringify(document.__certified_facts)}</script>`,
   };
 };
 
