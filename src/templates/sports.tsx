@@ -35,7 +35,7 @@ const templateLocales = ["en", "es"];
  */
 export const config: TemplateConfig = {
   stream: {
-    $id: "sports-stream-v6",
+    $id: "locations",
     // Specifies the exact data that each generated document will contain. This data is passed in
     // directly as props to the default exported function.
     fields: [
@@ -48,11 +48,11 @@ export const config: TemplateConfig = {
     ],
     // Defines the scope of entities that qualify for this stream.
     filter: {
-      entityTypes: ["ce_sports"],
+      entityTypes: ["locations"],
     },
     // The entity language profiles that documents will be generated for.
     localization: {
-      locales: ["en", "es"],
+      locales: ["en"],
       primary: false,
     },
   },
