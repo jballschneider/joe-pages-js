@@ -55,6 +55,7 @@ export const config: TemplateConfig = {
       locales: ["en"],
       primary: false,
     },
+    includeCertifiedFacts: true,
   },
 };
 
@@ -127,6 +128,7 @@ export const getHeadConfig: GetHeadConfig<TemplateRenderProps> = ({
         },
       },
     ],
+    other: `<script>${JSON.stringify(data.document.__certified_facts)}</script>`,
   };
 };
 
